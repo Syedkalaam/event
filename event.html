@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Event Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f8f8;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            width: 400px;
+            text-align: center;
+        }
+        .image-placeholder {
+            width: 100px;
+            height: 100px;
+            background-color: #ddd;
+            display: inline-block;
+            margin-bottom: 15px;
+            border-radius: 50%;
+            line-height: 100px;
+        }
+        .event-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+        input, select, button {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .button-container button {
+            width: 48%;
+            cursor: pointer;
+            color:white;
+            border: none;
+        }
+        .button-container button[type="submit"]{
+            background-color: forestgreen;
+
+        }
+        .button-container button[type="reset"]{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Event 1</h2>
+        <p>Number of available seats: <strong>23</strong></p>
+        <img src="reg.jpg" alt="Event Image" class="event-image">
+
+        <form>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="tel" placeholder="Phone No." required>
+            <select>
+                <option value="1">1</option>
+                <option value="2" selected>2</option>
+                <option value="3">3</option>
+            </select>
+            <input type="text" placeholder="Name of Attendee 2">
+            <div class="button-container">
+                <button type="submit">Submit</button>
+                <button type="reset">Cancel</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
